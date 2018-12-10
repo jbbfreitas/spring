@@ -1,0 +1,22 @@
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+	<changeSet id="altera_departamento" author="jbbf">
+		<addColumn  schemaName="public" tableName="departamento">
+			<column name="uf" type="varchar(02)" />
+		</addColumn>
+        <loadData encoding="UTF-8"
+                  file="config/liquibase/changelog/departamento.csv"
+                  separator=";"
+                  tableName="departamento">
+        </loadData>
+	</changeSet>
+
+	<changeSet id="tag-1.1" author="jbbf">
+		<tagDatabase tag="1.1" />
+	</changeSet>
+
+</databaseChangeLog>
