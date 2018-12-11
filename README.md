@@ -141,9 +141,13 @@ public class OlaMundo {
 </p>
 
 ::: :pushpin: Importante :::
-> Preste atenção na anotação 
+> Preste atenção no trecho de código abaixo:
 
-```java @Component```
+```java 
+@Component
+public class OlaMundo {
+...
+```
 
 6. Nesse mesmo pacote, crie outra classe `Main.java` com o seguinte conteúdo:
 
