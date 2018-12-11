@@ -140,6 +140,7 @@ public class OlaMundo {
    <strong>Listagem 2- OlaMundo.java </strong> 
 </p>
 
+> Preste atenção na anotação `@Component`
 
 6. Nesse mesmo pacote, crie outra classe `Main.java` com o seguinte conteúdo:
 
@@ -181,7 +182,7 @@ e depois
 
 
 
-> O teste unitário foi executado?
+> Algum teste unitário foi executado?
 
 #### Desafio 2 :innocent:
  
