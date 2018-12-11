@@ -207,7 +207,7 @@ e depois
 #### Desafio 2 :innocent:
  
 ```
-- Altere a classe `PrimoApplicationTests` para que fique conforme a listagem 4
+- Na pasta de testes, crie uma classe  denominada `PrimoApplicationTests` para que fique conforme a listagem 4
 ```
 
 ```java
