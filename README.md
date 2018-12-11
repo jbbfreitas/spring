@@ -140,7 +140,7 @@ public class OlaMundo {
    <strong>Listagem 2- OlaMundo.java </strong> 
 </p>
 
-> Preste atenção na anotação `@Component`
+> Preste atenção na anotação ```java @Component```
 
 6. Nesse mesmo pacote, crie outra classe `Main.java` com o seguinte conteúdo:
 
