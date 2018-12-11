@@ -150,28 +150,19 @@ public class OlaMundo {
 ```
 > Você está usando uma anotação de classe que transforma essa classe em um componente do Spring
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
 
 
 | Anotação      | Significado   											     | 
 | ------------- |:----------------------------------------------------------------------------------------------------------:| 
 | @Component    | Anotação genérica para qualquer componente gerenciado pelo Spring. Esta anotação faz com que o bean  registrado no Spring possa ser utilizado em qualquer bean, seja ele um serviço, um DAO, um controller, etc. No nosso exemplo, ele será responsável por um Bean que representa uma entidade. | 
-| col 2 is      | centered      | 
-| zebra stripes | are neat      | 
+| @Repository   | Anotação que serve para definir uma classe como pertencente à camada de persistência.      | 
+| @Service      | Anotação que serve para definir uma classe como pertencente à camada de Serviço da aplicação.     | 
+| @Autowired    | A anotação @ Autowired fornece controle sobre onde e como a ligação entre os beans deve ser realizada. Pode ser usado para em métodos setter, no construtor, em uma propriedade ou métodos com nomes arbitrários e / ou vários argumentos.
+   | 
 
-
-|Anotação.      |Siginificado|
-|@Component 	|:Anotação genérica para qualquer componente gerenciado pelo Spring. Esta anotação faz com que o bean registrado no Spring possa ser utilizado em qualquer bean, seja ele um serviço, um DAO, um controller, etc. No nosso exemplo, ele será responsável por um Bean que representa uma entidade.:|
-
-
-@Repository 	Anotação que serve para definir uma classe como pertencente à camada de persistência.
-@Service 	Anotação que serve para definir uma classe como pertencente à camada de Serviço da aplicação.
-@Autowired 	A anotação @ Autowired fornece controle sobre onde e como a ligação entre os beans deve ser realizada. Pode ser usado para em métodos setter, no construtor, em uma propriedade ou métodos com nomes arbitrários e / ou vários argumentos.
-
+<p align="center">
+   <strong>Tabela 1- Principais anotações do Spring </strong> 
+</p>
 
 6. Nesse mesmo pacote, crie outra classe `Main.java` com o seguinte conteúdo:
 
