@@ -156,6 +156,14 @@ public class OlaMundo {
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
+
+| Anotação      | Significado   											     | 
+| ------------- |:----------------------------------------------------------------------------------------------------------:| 
+| @Component    | Anotação genérica para qualquer componente gerenciado pelo Spring. Esta anotação faz com que o bean  registrado no Spring possa ser utilizado em qualquer bean, seja ele um serviço, um DAO, um controller, etc. No nosso exemplo, ele será responsável por um Bean que representa uma entidade. | 
+| col 2 is      | centered      | 
+| zebra stripes | are neat      | 
+
+
 |Anotação.      |Siginificado|
 |@Component 	|:Anotação genérica para qualquer componente gerenciado pelo Spring. Esta anotação faz com que o bean registrado no Spring possa ser utilizado em qualquer bean, seja ele um serviço, um DAO, um controller, etc. No nosso exemplo, ele será responsável por um Bean que representa uma entidade.:|
 
