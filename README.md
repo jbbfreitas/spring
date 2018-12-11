@@ -154,10 +154,10 @@ public class OlaMundo {
 
 | Anotação      | Significado   											     | 
 | ------------- |:----------------------------------------------------------------------------------------------------------| 
-| @Component    |Anotação genérica para qualquer componente gerenciado pelo Spring. Esta anotação faz com que o `bean`  registrado no Spring possa ser utilizado em qualquer `bean`, seja ele um serviço, um DAO, um controller, etc. No nosso exemplo, ele será responsável por um `bean` capaz de mostrar uma mensagem `Olá Mundo`. | 
+| @Component    |Anotação genérica para qualquer componente gerenciado pelo Spring. Esta anotação faz com que o `bean`  registrado no Spring possa ser utilizado em qualquer outro `bean`, seja ele um serviço, um DAO, um controller, etc. No nosso exemplo, ele será responsável por um `bean` capaz de mostrar stravés do método `digaOla()`. | 
 | @Repository   |Anotação que serve para definir uma classe como pertencente à camada de persistência.      | 
 | @Service      |Anotação que serve para definir uma classe como pertencente à camada de Serviço da aplicação.     | 
-| @Autowired    |A anotação @ Autowired fornece controle sobre onde e como a ligação entre os beans deve ser realizada. Pode ser usado para em métodos setter, no construtor, em uma propriedade ou métodos com nomes arbitrários e / ou vários argumentos.| 
+| @Autowired    |A anotação `@Autowired` informa ao Spring onde e como injetar uma instância de um `bean`. Pode ser usado em métodos setter, no construtor, em uma propriedade ou em métodos com nomes arbitrários e / ou vários argumentos.| 
 <p align="center">
    <strong>Tabela 1- Principais anotações do Spring </strong> 
 </p>
