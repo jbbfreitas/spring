@@ -10,13 +10,9 @@ import br.com.abim.primo.OlaMundo;
 @SpringBootApplication
 public class Main {
 
-	
-	
 	public static void main(String[] args) {
 		ApplicationContext ctx = SpringApplication.run(Main.class, args);
-		OlaMundo olaMundo = (OlaMundo) ctx.getBean("olaMundo");
+		OlaMundo olaMundo = (OlaMundo) ctx.getBean("xxx");
 		System.out.println(olaMundo.digaOla());
 	}
-	
-	
 }

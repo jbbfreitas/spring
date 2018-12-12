@@ -1,8 +1,10 @@
 package br.com.abim.primo;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("xxx")
+@Scope ("prototype")
 public class OlaMundo {
 
     public String digaOla(){
