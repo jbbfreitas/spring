@@ -46,21 +46,8 @@ public class DepartamentoServiceIntegrationInMemoryTest {
 
 	@Autowired
     private DepartamentoService departamentoService2;
-
-//	@Autowired
-//	private OlaMundo olaMundo;
 	
 	private static final Departamento depto=new Departamento();
-	
-	
-
-	
-//	@Test
-//	public void testBeanstNotNull() {
-//	    assertNotNull(olaMundo);
-//	}
-	
-	
 	@Test
 	public void whenSaveDepartamento() {
 	    String nome = DEFAULT_DEPARTAMENT_NAME;

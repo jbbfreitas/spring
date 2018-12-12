@@ -15,7 +15,7 @@ import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 /**
- * A Usuario.
+ * Departamento
  */
 @Entity
 @Table(name = "departamento")

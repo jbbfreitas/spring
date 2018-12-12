@@ -1,0 +1,19 @@
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+   <changeSet id="cria_sequencia" author="jbbf">
+        <createSequence sequenceName="hibernate_sequence" startValue="1000" incrementBy="50"/>
+    </changeSet>
+
+
+	<changeSet id="tag-1.3" author="jbbf">
+		<tagDatabase tag="1.0" />
+	</changeSet>
+
+
+
+
+</databaseChangeLog>

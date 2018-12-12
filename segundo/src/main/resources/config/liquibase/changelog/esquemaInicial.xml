@@ -4,10 +4,7 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
 
-   <changeSet id="cria_sequencia" author="jbbf">
-        <createSequence sequenceName="hibernate_sequence" startValue="1000" incrementBy="50"/>
-    </changeSet>
-
+ 
 	<changeSet id="cria_departamento" author="jbbf">
 		<createTable tableName="departamento">
 			<column name="id" type="bigint"

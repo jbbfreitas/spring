@@ -7,5 +7,6 @@
     <include file="config/liquibase/changelog/esquemaInicial.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/alteraTabelaDepartamento.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/criaConstraintEmpregado.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/criaSequence.xml" relativeToChangelogFile="false"/>
  
  </databaseChangeLog>
