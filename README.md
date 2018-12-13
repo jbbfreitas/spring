@@ -310,6 +310,24 @@ public class DepartamentoServiceIntegrationInMemoryTest {
     private DepartamentoService departamentoService;
 ```
 
+Por fim, a classe `DepartamentoServiceIntegrationMockTest.java` usa um ```@MockBean``` (uma classe falsa) e nesse caso, como está usando `@SpringBootTest` e não  ```@DataJpaTest``` o `@Autowired` funciona com a classe `DepartamentoService`
+
+
+```java
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class DepartamentoServiceIntegrationMockTest {
+
+    private static final String DEFAULT_DEPARTAMENT_NAME = "kkkkkkkk";
+	private static final Departamento depto=new Departamento();
+    
+    @MockBean
+    private DepartamentoRepository departamentoRepository;
+
+    @Autowired
+    private DepartamentoService departamentoService;
+
+```
 
 
 
