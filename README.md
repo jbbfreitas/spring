@@ -247,18 +247,11 @@ public class PrimoApplicationTests {
 
 > No segundo projeto foram criados 3 tipos de testes unitários
 
-- DepartamentoRepositoryIntegrationTest.java
-- DepartamentoServiceIntegrationInMemoryTest.java
-- DepartamentoServiceIntegrationMockTest.java
+1.  DepartamentoRepositoryIntegrationTest.java
+2.  DepartamentoServiceIntegrationInMemoryTest.java
+3.  DepartamentoServiceIntegrationMockTest.java
 
-```Xml
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.1.0.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
-```
+
 
 
 
