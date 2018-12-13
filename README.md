@@ -252,7 +252,19 @@ public class PrimoApplicationTests {
 3.  DepartamentoServiceIntegrationMockTest.java
 
 
+A classe `DepartamentoRepositoryIntegrationTest.java` usa ```entityManager```e não altera o banco de dados pois está anotada com ```@DataJpaTest```
 
+```java
+@RunWith(SpringRunner.class)
+@DataJpaTest
+public class DepartamentoRepositoryIntegrationTest {
+    
+    private static final String DEFAULT_DEPARTAMENT_NAME = "kkkkkkkk";
+
+    @Autowired
+    private TestEntityManager entityManager;
+
+```
 
 
 
