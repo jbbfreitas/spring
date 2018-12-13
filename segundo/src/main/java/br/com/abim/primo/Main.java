@@ -3,6 +3,7 @@ package br.com.abim.primo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
 import br.com.abim.primo.OlaMundo;
 import br.com.abim.primo.domain.Departamento;

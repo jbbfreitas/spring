@@ -25,21 +25,11 @@ public class DepartamentoServiceIntegrationMockTest {
     private static final String DEFAULT_DEPARTAMENT_NAME = "kkkkkkkk";
 	private static final Departamento depto=new Departamento();
     
-    @TestConfiguration
-    static class DepartamentoServiceTestContextConfiguration {
-  
-        @Bean
-        public DepartamentoService departamentoService2() {
-            return new DepartamentoService();
-        }
-    }
- 
-  
 	@MockBean
     private DepartamentoRepository departamentoRepository;
 
 	@Autowired
-    private DepartamentoService departamentoService2;
+    private DepartamentoService departamentoService;
 
 	
 	@Autowired
@@ -59,7 +49,7 @@ public class DepartamentoServiceIntegrationMockTest {
 
 	@Test
 	public void whenCreateDepartamento() {
-	    Departamento deptoReturned = departamentoService2.createDepartamento(depto);
+	    Departamento deptoReturned = departamentoService.createDepartamento(depto);
 	    assertNotNull(deptoReturned.getNome());
 	 }
 
