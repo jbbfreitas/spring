@@ -252,7 +252,7 @@ public class PrimoApplicationTests {
 3.  DepartamentoServiceIntegrationMockTest.java
 
 
-A classe `DepartamentoRepositoryIntegrationTest.java` usa ```entityManager```e não altera o banco de dados pois está anotada com ```@DataJpaTest```
+A classe `DepartamentoRepositoryIntegrationTest.java` usa ```entityManager```e não altera o banco de dados pois está anotada com ```@DataJpaTest```. Essa anotação executa os testes em um banco de dados na memória. Vide o `pom.xml` desse projeto
 
 ```java
 @RunWith(SpringRunner.class)
@@ -264,6 +264,50 @@ public class DepartamentoRepositoryIntegrationTest {
     @Autowired
     private TestEntityManager entityManager;
 
+```
+A classe `DepartamentoServiceIntegrationInMemoryTest.java` usa ```departamentoService```e não altera o banco de dados pois também está anotada com ```@DataJpaTest```. Entretanto para usar `@Autowired`em um service com o uso do `@DataJpaTest`, é preciso usar uma das seguintes abordagens:
+
+a. Usar `@ComponentScan`para que o contexto injete uma instância de `DepartamentoService`
+
+
+```java
+@RunWith(SpringRunner.class)
+@ComponentScan(basePackages = {"br.com.abim.primo"}) //Usamos @ComponentScan
+@DataJpaTest
+public class DepartamentoServiceIntegrationInMemoryTest {
+
+    private static final String DEFAULT_DEPARTAMENT_NAME = "kkkkkkkk";
+    @Autowired
+    private DepartamentoRepository departamentoRepository;
+    @Autowired
+    private DepartamentoService departamentoService;
+```
+
+ou 
+
+b. Usar `@TestConfiguration` cirando uma classe interna e declarando `DepartamentoService` como um `bean`. Nesse caso  o contexto  de teste injetará uma instância de `DepartamentoService`
+
+
+```java
+@RunWith(SpringRunner.class)
+@DataJpaTest
+public class DepartamentoServiceIntegrationInMemoryTest {
+
+    private static final String DEFAULT_DEPARTAMENT_NAME = "kkkkkkkk";
+
+    @TestConfiguration
+    static class DepartamentoServiceTestContextConfiguration { //Classe interna de configuração
+  
+        @Bean
+        public DepartamentoService departamentoService() {
+            return new DepartamentoService();
+        }
+    }
+
+    @Autowired
+    private DepartamentoRepository departamentoRepository;
+    @Autowired
+    private DepartamentoService departamentoService;
 ```
 
 
