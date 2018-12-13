@@ -243,6 +243,22 @@ public class PrimoApplicationTests {
 - Execute o teste unitário via Eclipse 
 ```
 
+::: :pushpin: Atenção Importante :::
+
+> No segundo projeto foram criados 3 tipos de testes unitários
+
+- DepartamentoRepositoryIntegrationTest.java
+- DepartamentoServiceIntegrationInMemoryTest.java
+- DepartamentoServiceIntegrationMockTest.java
+
+```Xml
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.0.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+```
 
 
 
