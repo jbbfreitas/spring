@@ -285,7 +285,7 @@ public class DepartamentoServiceIntegrationInMemoryTest {
 
 ou 
 
-b. Usar `@TestConfiguration` cirando uma classe interna e declarando `DepartamentoService` como um `bean`. Nesse caso  o contexto  de teste injetará uma instância de `DepartamentoService`
+b. Usar `@TestConfiguration` criando uma classe interna e declarando `DepartamentoService` como um `bean`. Nesse caso  o contexto  de teste injetará uma instância de `DepartamentoService`
 
 
 ```java
