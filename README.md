@@ -30,7 +30,7 @@ artifactId : primo
 version    : 0.1.0-SNAPSHOT
 packaging  : jar
 ```
-4. Altere o arquivo `pom.xml` conforme abaixo:
+4. Altere o arquivo `pom.xml` conforme abaixo :
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
